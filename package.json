@@ -1,5 +1,4 @@
 {
-  "name": "react-native-web-flags",
   "version": "0.0.1",
   "description": "A React Native and React Web component to display country flags with the ISO 3166-1 Standard.",
   "main": "index.js",
@@ -7,6 +6,13 @@
   "author": "Mark Rabey <mark@markrabey.com>",
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "react-native-web": "^0.17.7",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-native": "^0.67.3"
   }
 }
