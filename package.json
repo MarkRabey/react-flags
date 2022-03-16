@@ -6,10 +6,15 @@
   "author": "Mark Rabey <mark@markrabey.com>",
   "license": "MIT",
   "scripts": {
+    "build": "lerna run build",
+    "build:web": "lerna run build --scope @markrabey/react-native-web-flags",
+    "build:native": "lerna run build --scope @markrabey/react-native-flags",
+    "bootstrap": "lerna bootstrap --ignore-scripts --force-local",
     "lint": "tsc && eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "tsc && eslint . --fix --ext .js,.jsx,.ts,.tsx",
     "test": "jest --config jest.config.ts",
-    "coverage": "yarn test --coverage=true"
+    "coverage": "yarn test --coverage=true",
+    "postinstall": "yarn bootstrap"
   },
   "devDependencies": {
     "@babel/core": "^7.17.7",
@@ -28,6 +33,7 @@
     "lint-staged": "^12.3.6",
     "metro-react-native-babel-preset": "^0.69.1",
     "prettier": "^2.6.0",
+    "react-dom": "^17.0.2",
     "react-native-web": "^0.17.7",
     "react-test-renderer": "^17.0.2",
     "ts-node": "^10.7.0",
