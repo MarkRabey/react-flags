@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, Platform, StyleSheet} from 'react-native';
 
+import PlatformInfo from './components/PlatformInfo';
 interface Props {
   countryCode: string;
   size?: number;
@@ -10,7 +11,6 @@ interface Props {
 
 const Flag = ({countryCode, size = 32, style, variant = 'emoji'}: Props) => {
   const [flag, setFlag] = useState<string | null>(null);
-
   useEffect(() => {
     if (variant === 'emoji') {
       const codePoints = countryCode
@@ -23,7 +23,18 @@ const Flag = ({countryCode, size = 32, style, variant = 'emoji'}: Props) => {
     }
   }, [countryCode, variant]);
 
-  return <Text style={{...style, fontSize: size}}>{flag}</Text>;
+  return (
+    <View style={styles.container}>
+      <PlatformInfo />
+      <Text style={{...style, fontSize: size}}>{flag}</Text>
+    </View>
+  );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    padding: 6,
+  },
+});
 
 export default Flag;
