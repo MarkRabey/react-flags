@@ -10,6 +10,7 @@ interface Props {
 
 const Flag = ({countryCode, size = 32, style, variant = 'emoji'}: Props) => {
   const [flag, setFlag] = useState<string | null>(null);
+
   useEffect(() => {
     if (variant === 'emoji') {
       const codePoints = countryCode
@@ -20,7 +21,7 @@ const Flag = ({countryCode, size = 32, style, variant = 'emoji'}: Props) => {
     } else {
       setFlag('not available');
     }
-  }, [countryCode]);
+  }, [countryCode, variant]);
 
   return <Text style={{...style, fontSize: size}}>{flag}</Text>;
 };
