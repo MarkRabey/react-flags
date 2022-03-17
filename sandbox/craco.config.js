@@ -8,6 +8,7 @@ module.exports = function () {
       alias: {
         'react-native': 'react-native-web',
         'react-native-linear-gradient': 'react-native-web-linear-gradient',
+        '@markrabey/react-native-flags': '@markrabey/react-native-web-flags',
       },
       configure: config => {
         // Adding SVGR support for web
