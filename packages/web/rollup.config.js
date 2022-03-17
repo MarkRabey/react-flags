@@ -27,10 +27,10 @@ export default {
   ],
   plugins: [
     del({targets: 'lib/*'}),
-    autoExternal(),
     alias({
       entries: [{find: 'react-native', replacement: 'react-native-web'}],
     }),
+    autoExternal(),
     typescript(),
     commonjs(),
     svg(),

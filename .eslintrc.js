@@ -20,9 +20,11 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:jest/recommended',
+    'prettier',
     'plugin:prettier/recommended',
+    // '@react-native-community',
   ],
   plugins: ['react-hooks'],
   rules: {
