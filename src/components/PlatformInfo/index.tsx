@@ -1,9 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, Platform} from 'react-native';
 
-console.log({constants: Platform.constants});
-
-const PlatformInfo = () => {
+const PlatformInfo: React.FC = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Platform</Text>
