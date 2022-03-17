@@ -10,7 +10,9 @@
     "build:web": "lerna run build --scope @markrabey/react-native-web-flags",
     "build:native": "lerna run build --scope @markrabey/react-native-flags",
     "build:web:watch": "npm-watch build:web",
+    "build:native:watch": "npm-watch build:native",
     "web": "concurrently \"lerna run web --scope sandbox\" \"yarn build:web:watch\"",
+    "native": "concurrently \"lerna run native --scope sandbox\" \"yarn build:native:watch\"",
     "bootstrap": "lerna bootstrap --ignore-scripts --force-local",
     "lint": "tsc && eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "tsc && eslint . --fix --ext .js,.jsx,.ts,.tsx",
@@ -19,11 +21,11 @@
     "postinstall": "yarn bootstrap",
     "prepare": "husky install",
     "_dev:web": "lerna run dev --scope @markrabey/react-native-web-flags",
-    "dev:web": "npm-watch _dev:web"
+    "dev:web": "npm-watch _dev:web",
+    "_dev:native": "lerna run dev --scope @markrabey/react-native-flags",
+    "dev:native": "npm-watch _dev:native"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.7",
-    "@babel/runtime": "^7.17.7",
     "@react-native-community/eslint-config": "^3.0.1",
     "@testing-library/jest-native": "^4.0.4",
     "@testing-library/react-native": "^9.0.0",
@@ -41,7 +43,6 @@
     "jest": "^27.5.1",
     "lerna": "^4.0.0",
     "lint-staged": "^12.3.6",
-    "metro-react-native-babel-preset": "^0.69.1",
     "npm-watch": "^0.11.0",
     "prettier": "^2.6.0",
     "react-dom": "^17.0.2",
@@ -54,6 +55,18 @@
     "react-native": "^0.67.3"
   },
   "watch": {
+    "build:native": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "*"
+    },
+    "_dev:native": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "*"
+    },
     "_dev:web": {
       "patterns": [
         "src"

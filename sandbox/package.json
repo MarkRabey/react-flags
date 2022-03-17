@@ -9,10 +9,15 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "flags:link": "yalc add --link @markrabey/react-native-web-flags && yarn --force",
-    "flags:unlink": "yalc remove @markrabey/react-native-web-flags && yarn --force"
+    "flags:link": "yarn flags:web:link && yarn flags:native:link",
+    "flags:unlink": "yarn flags:web:unlink && yarn flags:native:unlink",
+    "flags:web:link": "yalc add --link @markrabey/react-native-web-flags && yarn --force",
+    "flags:web:unlink": "yalc remove @markrabey/react-native-web-flags && yarn --force",
+    "flags:native:link": "yalc add --link @markrabey/react-native-flags && yarn --force",
+    "flags:native:unlink": "yalc remove @markrabey/react-native-flags && yarn --force"
   },
   "dependencies": {
+    "@markrabey/react-native-flags": "link:.yalc/@markrabey/react-native-flags",
     "@markrabey/react-native-web-flags": "link:.yalc/@markrabey/react-native-web-flags",
     "react": "17.0.2",
     "react-dom": "^17.0.2",
@@ -24,12 +29,9 @@
     "@babel/runtime": "^7.12.5",
     "@craco/craco": "^6.4.3",
     "@react-native-community/eslint-config": "^2.0.0",
-    "@types/jest": "^26.0.23",
     "@types/react-native": "^0.66.15",
     "@types/react-test-renderer": "^17.0.1",
-    "babel-jest": "^26.6.3",
     "eslint": "^7.14.0",
-    "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.66.2",
     "react-scripts": "^5.0.0",
     "react-test-renderer": "17.0.2",
@@ -37,17 +39,6 @@
   },
   "resolutions": {
     "@types/react": "^17"
-  },
-  "jest": {
-    "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
   },
   "browserslist": {
     "production": [
