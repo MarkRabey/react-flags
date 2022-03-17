@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useCallback, useState} from 'react';
 import {
   SafeAreaView,
   Text,
@@ -30,24 +30,27 @@ const App = () => {
   const [selectedCountryCode, setSelectedCountryCode] = useState<number | null>(
     null,
   );
-  const renderItem = ({item}) => {
-    const isActive = item.code === selectedCountryCode;
-    const backgroundColor = isActive ? '#ddd' : '#fff';
-    const color = isActive ? '#121212' : '#333';
+  const renderItem = useCallback(
+    ({item}) => {
+      const isActive = item.code === selectedCountryCode;
+      const backgroundColor = isActive ? '#ddd' : '#fff';
+      const color = isActive ? '#121212' : '#333';
 
-    return (
-      <Item
-        item={item}
-        onPress={() =>
-          isActive
-            ? setSelectedCountryCode(null)
-            : setSelectedCountryCode(item.code)
-        }
-        backgroundColor={{backgroundColor}}
-        textColor={{color}}
-      />
-    );
-  };
+      return (
+        <Item
+          item={item}
+          onPress={() =>
+            isActive
+              ? setSelectedCountryCode(null)
+              : setSelectedCountryCode(item.code)
+          }
+          backgroundColor={{backgroundColor}}
+          textColor={{color}}
+        />
+      );
+    },
+    [selectedCountryCode],
+  );
   return (
     <SafeAreaView style={{flex: 1}}>
       <View style={{padding: 6, flex: 1}}>
