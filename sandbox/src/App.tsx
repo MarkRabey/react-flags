@@ -20,8 +20,9 @@ const Item = ({item, onPress, backgroundColor, textColor}) => (
       padding: 10,
     }}
     onPress={onPress}>
-    <Flag style={{marginRight: 12}} size={24} countryCode={item.code} />
     <Text style={{...textColor, fontSize: 14, flex: 1}}>{item.name}</Text>
+    <Flag size={24} countryCode={item.code} />
+    <Flag size={24} countryCode={item.code} variant="flat" />
   </TouchableOpacity>
 );
 
@@ -51,6 +52,7 @@ const App = () => {
     <SafeAreaView style={{flex: 1}}>
       <View style={{padding: 6, flex: 1}}>
         <PlatformInfo />
+        <Flag countryCode="CA" variant="flat" />
         <View style={{flex: 1}}>
           <FlatList
             style={{marginTop: 12}}
