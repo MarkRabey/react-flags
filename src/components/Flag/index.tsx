@@ -19,7 +19,13 @@ const Flag = ({countryCode, size = 16, style, variant = 'emoji'}: Props) => {
         .map(char => 127397 + char.charCodeAt(0));
       setFlag(String.fromCodePoint(...codePoints));
     } else {
-      setFlag(countryCode.toLowerCase());
+      if (countryCode.toLocaleLowerCase() === 'in') {
+        setFlag('ind');
+      } else if (countryCode.toLocaleLowerCase() === 'do') {
+        setFlag('dom');
+      } else {
+        setFlag(countryCode.toLowerCase());
+      }
     }
   }, [countryCode, variant]);
 
