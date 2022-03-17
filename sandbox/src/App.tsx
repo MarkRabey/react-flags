@@ -6,7 +6,7 @@ const App = () => {
   return (
     <SafeAreaView>
       <View>
-        <Flag />
+        <Flag countryCode="CA" />
       </View>
     </SafeAreaView>
   );
