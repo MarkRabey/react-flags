@@ -52,7 +52,6 @@ const App = () => {
     <SafeAreaView style={{flex: 1}}>
       <View style={{padding: 6, flex: 1}}>
         <PlatformInfo />
-        <Flag countryCode="CA" variant="flat" />
         <View style={{flex: 1}}>
           <FlatList
             style={{marginTop: 12}}
