@@ -2,7 +2,8 @@
   "version": "0.0.1",
   "description": "A React Native and React Web component to display country flags with the ISO 3166-1 Standard.",
   "main": "index.js",
-  "repository": "https://github.com/MarkRabey/react-native-web-flags",
+  "repository": "https://github.com/MarkRabey/react-flags",
+  "homepage": "https://github.com/MarkRabey/react-flags",
   "author": "Mark Rabey <mark@markrabey.com>",
   "license": "MIT",
   "scripts": {
