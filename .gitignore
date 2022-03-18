@@ -63,4 +63,5 @@ buck-out/
 lib/
 coverage/**
 !coverage/*.svg
+!coverage/coverage-summary.json
 yalc.lock
