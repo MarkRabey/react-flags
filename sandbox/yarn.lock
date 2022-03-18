@@ -1514,6 +1514,11 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@markrabey/react-native-flags@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@markrabey/react-native-flags/-/react-native-flags-0.0.1.tgz#9b97718cdc403ea8fa46f91ec7a4230aeaf7b4c4"
+  integrity sha512-gFYAgs4BiynyqStFYCUxy2NL9gWIF7h2teUatpgWLPfdrIfCwSMqwFLO+/yiBuPM063Kt8A3n2wZFdoZZ1O/lg==
+
 "@markrabey/react-native-web-flags@^0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@markrabey/react-native-web-flags/-/react-native-web-flags-0.0.1.tgz#2de0bf1b998a36ae06c2016f4f977d40077dce12"

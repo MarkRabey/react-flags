@@ -7,7 +7,9 @@ import {
   FlatList,
   TouchableOpacity,
 } from 'react-native';
-import Flag, {PlatformInfo, countries} from '@markrabey/react-native-flags';
+import Flag, {countries} from '@markrabey/react-native-flags';
+
+import PlatformInfo from './components/PlatformInfo';
 
 const Item = ({item, onPress, backgroundColor, textColor}) => (
   <TouchableOpacity
