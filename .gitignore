@@ -61,5 +61,6 @@ buck-out/
 /ios/Pods/
 #/dist
 lib/
-coverage/
+coverage/**
+!coverage/*.svg
 yalc.lock
