@@ -20,7 +20,7 @@
     "test": "jest --config jest.config.ts",
     "coverage": "yarn test --coverage=true",
     "postinstall": "yarn bootstrap",
-    "publish": "lerna publish patch --force-publish --yes",
+    "publish": "lerna publish patch --no-private --force-publish --yes",
     "prepare": "husky install",
     "_dev:web": "lerna run dev --scope @markrabey/react-native-web-flags",
     "dev:web": "npm-watch _dev:web",
