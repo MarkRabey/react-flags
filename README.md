@@ -1,27 +1,35 @@
-# React Native Flags
+# React Flags
 
-A React Native component to display country flags with the ISO 3166-1 alpha 2 Standard.
+React componets to display various flags.
 
 ## Table of Contents:
 
-- [Installation](#installation)
+- [Packages](#packages)
+- [Installation and Setup](#installation-and-setup)
 - [Usage](#usage)
-- [Props](#props)
-  - [Variants](#variants)
 - [Future Versions](#future-versions)
 - [License](#license)
 
-## Installation
+## Packages
 
-```
-yarn add @markrabey/react-native-flags
-```
+React Flags consists of three packages:
+
+- [`@markrabey/react-flags`](/packages/web/) - for projects using [React](https://reactjs.org/) (ReactJS)
+- [`@markrabey/react-native-flags`](/packages/native/) - for projects using [React Native](https://reactnative.dev/)
+- [`@markrabey/react-native-web-flags`](/packages/web/) - for projects using [React Native Web](https://necolas.github.io/react-native-web/)
+
+## Installation and Setup
+
+For installation and setup details, see the document for specific [package](#packages) being being used.
 
 ## Usage
 
 ```jsx
 import {View} from 'react-native';
+// Import `Flag` from selected package
+import Flag from '@markrabey/react-flags';
 import Flag from '@markrabey/react-native-flags';
+import Flag from '@markrabey/react-native-web-flags';
 
 function App() {
   return (
@@ -52,7 +60,7 @@ Variants offer different styles of flags.
 
 ## Future Versions
 
-React Native Flags is in active development with new features planned or being considered:
+React Flags is in active development with new features planned or being considered:
 
 - Additional variants, including a `3d` style
 - Color variants - currently planning to offer color or black and white
