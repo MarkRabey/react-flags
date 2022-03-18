@@ -1,7 +1,10 @@
-# React Flags [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+# React Flags
 
 ![coverage-branches](./coverage/badge-branches.svg)
 ![coverage-functions](./coverage/badge-functions.svg)
+![coverage-lines](./coverage/badge-lines.svg)
+![coverage-statements](./coverage/badge-statements.svg)
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 React componets to display various flags.
 
