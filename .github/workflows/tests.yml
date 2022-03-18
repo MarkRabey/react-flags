@@ -29,4 +29,5 @@ jobs:
               repo: context.repo.repo,
               body: 'Code coverage is too low. Current coverage is ${{steps.coverage_percentage.outputs.PERCENTAGE}}%. Minimum required coverage is 80%'
             })
+      - if: steps.coverage_percentage.outputs.PERCENTAGE < 110
         run: exit 1
