@@ -1,4 +1,4 @@
-# React Native Web Flags [![npm (scoped)](https://img.shields.io/npm/v/@markrabey/react-native-web-flags)](https://www.npmjs.com/@markrabey/react-native-flags)
+# React Native Web Flags [![npm (scoped)](https://img.shields.io/npm/v/@markrabey/react-native-web-flags)](https://www.npmjs.com/@markrabey/react-native-web-flags)
 
 A React Native Web component to display country flags with the ISO 3166-1 alpha 2 Standard.
 
