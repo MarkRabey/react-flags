@@ -1,6 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Flag 1`] = `
+exports[`Flag checks country code for "DO" 1`] = `
+<View
+  style={Object {}}
+>
+  <Image
+    source={
+      Object {
+        "process": [Function],
+      }
+    }
+    style={
+      Object {
+        "height": 11.2,
+        "width": 17.919999999999998,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Flag checks country code for "IN" 1`] = `
+<View
+  style={Object {}}
+>
+  <Image
+    style={
+      Object {
+        "height": 11.2,
+        "width": 17.919999999999998,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Flag renders correctly 1`] = `
 <View
   style={Object {}}
 >
@@ -8,6 +43,26 @@ exports[`Flag 1`] = `
     style={
       Object {
         "fontSize": 16,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Flag renders flat image correctly 1`] = `
+<View
+  style={Object {}}
+>
+  <Image
+    source={
+      Object {
+        "process": [Function],
+      }
+    }
+    style={
+      Object {
+        "height": 11.2,
+        "width": 17.919999999999998,
       }
     }
   />
