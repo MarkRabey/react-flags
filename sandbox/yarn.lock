@@ -1514,13 +1514,12 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@markrabey/react-native-flags@link:.yalc/@markrabey/react-native-flags":
-  version "0.0.0"
-  uid ""
-
-"@markrabey/react-native-web-flags@link:.yalc/@markrabey/react-native-web-flags":
-  version "0.0.0"
-  uid ""
+"@markrabey/react-native-web-flags@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@markrabey/react-native-web-flags/-/react-native-web-flags-0.0.1.tgz#2de0bf1b998a36ae06c2016f4f977d40077dce12"
+  integrity sha512-EAddztUO0Q8csuJY+90do8N5hjbhmCd5oK4LViB63vLVGLPn6RtwvuYx2KQYVHzwkUbHe2Y9F3VmTJ4FQsKC/A==
+  dependencies:
+    react-native-web "^0.17.7"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
