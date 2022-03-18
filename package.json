@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A React Native and React Web component to display country flags with the ISO 3166-1 Standard.",
   "main": "index.js",
   "repository": "https://github.com/MarkRabey/react-flags",
