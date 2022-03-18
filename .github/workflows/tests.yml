@@ -1,11 +1,22 @@
-name: Tests
-on: [push]
+name: Coverage
+on:
+  pull_request:
+    branches:
+      - develop
 jobs:
-  jest:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Install
         run: yarn
       - name: Run tests
-        run: yarn test
+        run: yarn test:coverage
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ArtiomTr/jest-coverage-report-action@v2
+        with:
+          package-manager: yarn
+          coverage-file: ./coverage/coverage-summary.json
