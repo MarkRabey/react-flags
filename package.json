@@ -12,8 +12,6 @@
     "build:native": "lerna run build --scope @markrabey/react-native-flags",
     "build:web:watch": "npm-watch build:web",
     "build:native:watch": "npm-watch build:native",
-    "web": "concurrently \"lerna run web --scope sandbox\" \"yarn build:web:watch\"",
-    "native": "concurrently \"lerna run native --scope sandbox\" \"yarn build:native:watch\"",
     "bootstrap": "lerna bootstrap --ignore-scripts --force-local",
     "lint": "tsc && eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "tsc && eslint . --fix --ext .js,.jsx,.ts,.tsx",
